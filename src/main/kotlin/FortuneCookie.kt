@@ -1,5 +1,3 @@
-import java.util.Random
-
 fun main(args: Array<String>){
 
     var fortune: String
@@ -23,7 +21,13 @@ fun getFortune(birthday : Int) : String {
     var fortuneIndex = birthday % fortune.size
     //fortune[fortuneIndex]
     return when(birthday){
-        1, 2, 3, 4, 5, 6, 7 -> fortune[Random().nextInt(7)]
+        1, 2, 3, 4, 5, 6, 7 -> fortune[0]
+        8, 9, 10 -> fortune[1]
+        11, 12 , 13 -> fortune[2]
+        14, 15, -> fortune[3]
+        16, 17, 18, 19, 20 -> fortune[4]
+        21, 22, 23 -> fortune[5]
+        28, 30 -> fortune[6]
         else -> fortune[fortuneIndex]
     }
 }
