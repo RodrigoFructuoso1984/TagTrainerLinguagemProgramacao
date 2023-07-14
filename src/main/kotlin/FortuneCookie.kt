@@ -1,10 +1,25 @@
 fun main(args: Array<String>){
 
     var fortune: String
-    for (i in 1..10) {
+    /*for (i in 1..10) {
         fortune = getFortune(getBirthday())
         println("\nYour fortune is: $fortune")
         if (fortune.contains("Take it easy")) break;
+    }*/
+
+    /*repeat(10) {
+        println("\nYour fortune is: $fortune")
+        //if (fortune.contains("Take it easy")) {
+        //    break
+        //}
+    }*/
+
+    //var contador = 0
+    fortune = ""
+    while (fortune != "Take it easy") {
+        fortune = getFortune(getBirthday())
+        println("\nYour fortune is: $fortune")
+        //contador ++
     }
 }
 
@@ -28,7 +43,7 @@ fun getFortune(birthday : Int) : String {
         16, 17, 18, 19, 20 -> fortune[4]
         21, 22, 23 -> fortune[5]
         28, 30 -> fortune[6]
-        else -> fortune[fortuneIndex]
+        else -> "Take it easy"
     }
 }
 
