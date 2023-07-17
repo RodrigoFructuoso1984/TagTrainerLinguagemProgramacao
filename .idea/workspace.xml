@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11b72e01-1d26-4b36-9479-c7db9d0d94de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RollDice.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Aquarium/Fish.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SimpleSpice.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Spice.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/AMS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/AMS.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +21,28 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Hello_Kotlin2" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -37,15 +58,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;create__aquarium&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "create__aquarium",
+    "last_opened_file_path": "/Users/user/IdeaProjects/Hello_Kotlin2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Kotlin.RollDiceKt">
+}]]></component>
+  <component name="RunManager" selected="Kotlin.SpiceKt">
     <configuration name="AMSKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AMSKt" />
       <module name="Hello_Kotlin2.main" />
@@ -69,36 +91,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemperatureKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TemperatureKt" />
+    <configuration name="SimpleSpiceKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SimpleSpiceKt" />
       <module name="Hello_Kotlin2.main" />
-      <option name="PROGRAM_PARAMETERS" value="Kotlin" />
-      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WhatShouldIDoTodayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WhatShouldIDoTodayKt" />
+    <configuration name="SpiceKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SpiceKt" />
       <module name="Hello_Kotlin2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Kotlin.SimpleSpiceKt" />
+      <item itemvalue="Kotlin.SpiceKt" />
       <item itemvalue="Kotlin.RollDiceKt" />
-      <item itemvalue="Kotlin.WhatShouldIDoTodayKt" />
       <item itemvalue="Kotlin.FortuneCookieKt" />
-      <item itemvalue="Kotlin.TemperatureKt" />
       <item itemvalue="Kotlin.AMSKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.SpiceKt" />
+        <item itemvalue="Kotlin.SimpleSpiceKt" />
         <item itemvalue="Kotlin.RollDiceKt" />
         <item itemvalue="Kotlin.AMSKt" />
         <item itemvalue="Kotlin.FortuneCookieKt" />
-        <item itemvalue="Kotlin.WhatShouldIDoTodayKt" />
-        <item itemvalue="Kotlin.TemperatureKt" />
       </list>
     </recent_temporary>
   </component>
