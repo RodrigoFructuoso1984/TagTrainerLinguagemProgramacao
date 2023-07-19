@@ -5,6 +5,13 @@ fun main(args: Array<String>) {
     println("Curry color: ${mildCurry.color}")
     mildCurry.prepareSpice()
     mildCurry.grind()
+
+    val spiceCabinet = listOf(SpiceContainer(Curry("Yellow Curry", "mild")),
+        SpiceContainer(Curry("Red Curry", "medium")),
+        SpiceContainer(Curry("Green Curry", "spicy")))
+
+    spiceCabinet.forEach { println(it.label) }
+
 }
 
 abstract class Spice(val name: String, val spiciness: String = "mild", spiceColor: SpiceColor = YellowSpiceColor) : SpiceColor by spiceColor {
@@ -31,4 +38,8 @@ class Curry(name: String, spiciness: String) : Spice(name, spiciness), Grinder  
     override fun grind() {
         println("Grinding $name curry")
     }
+}
+
+data class SpiceContainer(val spice: Spice){
+    val label: String = spice.name
 }
