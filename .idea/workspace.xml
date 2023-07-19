@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11b72e01-1d26-4b36-9479-c7db9d0d94de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Aquarium/Generics.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Aquarium/generics/Aquarium.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Buildings/BaseBuildingMaterial.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Book1/Book1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Book1/Book1.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +69,14 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.Book1Kt">
+  <component name="RunManager" selected="Kotlin.AquariumKt">
+    <configuration name="AquariumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aquarium.generics.AquariumKt" />
+      <module name="Hello_Kotlin2.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Book1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Book1.Book1Kt" />
       <module name="Hello_Kotlin2.main" />
@@ -77,13 +86,6 @@
     </configuration>
     <configuration name="BookKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BookKt" />
-      <module name="Hello_Kotlin2.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleSpiceKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SimpleSpiceKt" />
       <module name="Hello_Kotlin2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,19 +106,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Kotlin.AquariumKt" />
       <item itemvalue="Kotlin.Book1Kt" />
       <item itemvalue="Kotlin.BookKt" />
       <item itemvalue="Kotlin.SpiceKt (1)" />
-      <item itemvalue="Kotlin.SimpleSpiceKt" />
       <item itemvalue="Kotlin.SpiceKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.AquariumKt" />
         <item itemvalue="Kotlin.Book1Kt" />
         <item itemvalue="Kotlin.SpiceKt (1)" />
         <item itemvalue="Kotlin.BookKt" />
         <item itemvalue="Kotlin.SpiceKt" />
-        <item itemvalue="Kotlin.SimpleSpiceKt" />
       </list>
     </recent_temporary>
   </component>
