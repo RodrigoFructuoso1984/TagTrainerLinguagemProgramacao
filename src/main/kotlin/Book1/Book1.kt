@@ -1,6 +1,8 @@
 package Book1
 
-class Book(val title: String, val author: String, val year: Int) {
+import kotlin.random.Random
+
+class Book(val title: String, val author: String, val year: Int, var pages: Int) {
     fun titleWithAuthorPair(): Pair<String,String>{
         return  title to author
     }
@@ -28,9 +30,20 @@ class Book(val title: String, val author: String, val year: Int) {
 
 }
 
+fun Book.getWeight() : Double { return (this.pages * 1.5)}
+fun Book.tornPages(torn: Int) = if (pages >= torn) pages -= torn else pages = 0
+
+class Puppy {
+    fun playWithBook(book: Book) {
+        val damagedPages = Random.nextInt(1, book.pages + 1)
+        book.tornPages(damagedPages)
+        println("O livro '${book.title}' teve $damagedPages páginas danificadas.")
+    }
+}
+
 fun main(args: Array<String>) {
 
-    val book = Book("A Guerra dos Tronos", "George R. R. Martin", 1996)
+    val book = Book("A Guerra dos Tronos", "George R. R. Martin", 1996, 1)
 
     book.printUrl()
     println(book.canBorrow(hasBook = 2))
@@ -65,7 +78,14 @@ fun main(args: Array<String>) {
 
     println("Teste" + moreBooks)
 
+    val puppy = Puppy()
+    val book2 = Book("Oliver Twist", "Charles Dickens", 1837, 540)
 
+    while (book2.pages > 0) {
+        puppy.playWithBook(book2)
+    }
+
+    println("O livro '${book2.title}' não tem mais páginas.")
 }
 
 const val MAX_NUMBERS_BOOKS = 20
