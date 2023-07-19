@@ -9,19 +9,40 @@ class Book(val title: String, val author: String, val year: Int) {
         return Triple(title, author, year)
     }
 
+    fun canBorrow(hasBook: Int) : Boolean {
+        return hasBook < MAX_NUMBERS_BOOKS
+    }
+
+    fun printUrl() {
+        val url = createUrl(title)
+        println(url)
+    }
+
+
+    companion object {
+        const val BASE_URL = "https://www.library.com/books/"
+        fun createUrl(title: String) : String {
+            return BASE_URL + title + ".html"
+        }
+    }
+
 }
 
 fun main(args: Array<String>) {
-    /*val book = Book("A Guerra dos Tronos", "George R. R. Martin", 1996)
+
+    val book = Book("A Guerra dos Tronos", "George R. R. Martin", 1996)
+
+    book.printUrl()
+    println(book.canBorrow(hasBook = 2))
 
     val titleAuthorYearTriple = book.titleWithAuthorWithYearTriple()
-    val (nome, author, title) = titleAuthorYearTriple
-    println(nome)
+    val (title, author, year) = titleAuthorYearTriple
+    println(year)
     println(author)
     println(title)
     println("Aqui está o livro ${titleAuthorYearTriple.first}," +
             " escrito por ${titleAuthorYearTriple.second}" +
-            " em ${titleAuthorYearTriple.third}")*/
+            " em ${titleAuthorYearTriple.third}")
 
     val allBooks: MutableList<String> = mutableListOf("Romeo and Juliet", "Hamlet", "Macbeth", "Othello")
     val library: Map<String, MutableList<String>> = mapOf("William Shakespeare" to allBooks)
@@ -35,7 +56,7 @@ fun main(args: Array<String>) {
     val moreBooks = mutableMapOf<String, String>()
     moreBooks["The Tempest"] = "William Shakespeare"
 
-    val title = "Hamlet"
+    //val title = "Hamlet"
     //val title = "The Tempest"
 
     if (!moreBooks.containsKey(title)) {
@@ -43,4 +64,8 @@ fun main(args: Array<String>) {
     }
 
     println("Teste" + moreBooks)
+
+
 }
+
+const val MAX_NUMBERS_BOOKS = 20
