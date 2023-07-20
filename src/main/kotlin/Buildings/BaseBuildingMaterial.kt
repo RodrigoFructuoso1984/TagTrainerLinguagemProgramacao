@@ -24,9 +24,19 @@ class Building<T: BaseBuildingMaterial>(val material: T) {
     }
 }
 
+fun <T: BaseBuildingMaterial> isSmallbuilding(building: Building<T>) {
+    if(building.actualMaterilsNeeded < 500) {
+        println("pequeno edifício")
+    } else {
+        println("grande edifício")
+    }
+}
+
 fun create(){
-    val wood : Building<Wood> = Building(Wood())
-    wood.build()
+    //val wood : Building<Wood> = Building(Wood())
+    //wood.build()
+    val building = Building(Wood())
+    isSmallbuilding(building)
 }
 
 fun main(args: Array<String>){
