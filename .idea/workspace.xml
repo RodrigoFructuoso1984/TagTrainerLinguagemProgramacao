@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11b72e01-1d26-4b36-9479-c7db9d0d94de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Aquarium/Generics.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Aquarium/generics/Aquarium.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Buildings/BaseBuildingMaterial.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Buildings/BaseBuildingMaterial.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Buildings/BaseBuildingMaterial.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,21 +55,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "create__aquarium",
-    "last_opened_file_path": "/Users/user/IdeaProjects/Hello_Kotlin2",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;create__aquarium&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user/IdeaProjects/Hello_Kotlin2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Kotlin.AquariumKt">
+}</component>
+  <component name="RunManager" selected="Kotlin.BaseBuildingMaterialKt">
     <configuration name="AquariumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Aquarium.generics.AquariumKt" />
+      <module name="Hello_Kotlin2.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseBuildingMaterialKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Buildings.BaseBuildingMaterialKt" />
       <module name="Hello_Kotlin2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,27 +103,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpiceKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpiceKt" />
-      <module name="Hello_Kotlin2.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Kotlin.BaseBuildingMaterialKt" />
       <item itemvalue="Kotlin.AquariumKt" />
       <item itemvalue="Kotlin.Book1Kt" />
       <item itemvalue="Kotlin.BookKt" />
       <item itemvalue="Kotlin.SpiceKt (1)" />
-      <item itemvalue="Kotlin.SpiceKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.BaseBuildingMaterialKt" />
+        <item itemvalue="Kotlin.SpiceKt (1)" />
         <item itemvalue="Kotlin.AquariumKt" />
         <item itemvalue="Kotlin.Book1Kt" />
-        <item itemvalue="Kotlin.SpiceKt (1)" />
         <item itemvalue="Kotlin.BookKt" />
-        <item itemvalue="Kotlin.SpiceKt" />
       </list>
     </recent_temporary>
   </component>
