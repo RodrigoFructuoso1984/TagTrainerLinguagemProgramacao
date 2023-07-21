@@ -4,13 +4,13 @@ data class Fish(var name: String)
 
 fun main ( args: Array<String> ) {
     fishExamples()
-    val numbers = listOf<Int>(1,2,3,4,5,6,7,8,9,0)
+    /*val numbers = listOf<Int>(1,2,3,4,5,6,7,8,9,0)
     print(numbers.divisibleBy {
         it.rem(3)
-    })
+    })*/
 }
 
-fun List<Int>.divisibleBy(lambda: (Int) -> Int): List<Int> {
+/*fun List<Int>.divisibleBy(lambda: (Int) -> Int): List<Int> {
     val numbers = mutableListOf<Int>()
     for (item in this){
         if (lambda(item) == 0){
@@ -18,12 +18,12 @@ fun List<Int>.divisibleBy(lambda: (Int) -> Int): List<Int> {
         }
     }
     return numbers
-}
+}*/
 
 fun fishExamples() {
     val fish = Fish("splashy")
 
-    myWith (fish.name){
+    /*myWith (fish.name){
         println(capitalize())
     }
     println(fish.run { name })
@@ -35,9 +35,19 @@ fun fishExamples() {
     println(fish.let { it.name.capitalize() }
         .let { it + "fish" }
         .let { it.length }
-        .let { it + 31 })
+        .let { it + 31 })*/
+
+    // without inline an object is created every call to myWith
+    myWith(fish.name, object : Function1<String, Unit> {
+        override fun invoke(name: String) {
+            name.capitalize()
+        }
+    })
+
+    // with inline no object is created, and lambda body is inlined here
+    fish.name.capitalize()
 }
 
-fun myWith(name: String, block: String.() -> Unit) {
+inline fun myWith(name: String, block: String.() -> Unit) {
     name.block()
 }
