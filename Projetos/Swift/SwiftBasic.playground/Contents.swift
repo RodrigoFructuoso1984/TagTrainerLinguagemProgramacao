@@ -36,3 +36,15 @@ var number: Int = 100
 // Save numbers like 20, 1000, 1, 2342... ->
 // Save decimal number like 20.3 -> Double or Float
 // Save text like "Hi I'm Chris" -> String
+
+
+/*
+ Type inference
+ */
+
+// Do I have to specify the data type in Swift? -> NO
+// Why? Because Swift automatically recognizes the data type from the assigment
+
+var gameHighScore = 1000
+var username = "Testuser"
+let databaseAdress2 = "database12345"
