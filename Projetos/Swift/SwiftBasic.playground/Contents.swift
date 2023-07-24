@@ -72,3 +72,20 @@ var userThree = 20
 var restartAlertBoxInSecondWindow = "return"
 var categoryTag = 0
 let backGroundColor = "Red"
+
+/*
+ func
+ */
+
+// What is a function?
+// A function always has a task
+
+func nameOfTheFunction(){
+    //function block
+    print("Check the password and email")
+    print("Login")
+    print("Load the new posts")
+    print("Show the new posts")
+}
+
+nameOfTheFunction()
