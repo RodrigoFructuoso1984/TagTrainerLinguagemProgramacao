@@ -173,6 +173,8 @@ func bakePizza(ingredient1: String, ingredient2: String, ingredient3: String) ->
 var pizza = bakePizza(ingredient1: "tuna", ingredient2: "cheese", ingredient3: "mushrooms")
 print(pizza)
 
+// Why use the keyword return?
+// Give me after the job / tasks something back, because I need it for something else
 var amount = 120
 var personCount = 2
 
