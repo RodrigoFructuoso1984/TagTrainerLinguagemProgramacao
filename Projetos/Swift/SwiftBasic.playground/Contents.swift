@@ -25,3 +25,14 @@ lifeCount = 1
 var playerImage = "Image of Spaceship"
 
 let databaseAdress = "database123"
+
+/*****************
+     data type
+ ************************/
+
+// What is a data type? -> specifies the type of information in a variable / constant
+var number: Int = 100
+
+// Save numbers like 20, 1000, 1, 2342... ->
+// Save decimal number like 20.3 -> Double or Float
+// Save text like "Hi I'm Chris" -> String
