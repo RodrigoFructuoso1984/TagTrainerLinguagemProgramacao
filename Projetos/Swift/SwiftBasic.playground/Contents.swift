@@ -138,7 +138,7 @@ func createBlueEnemyPlayer() {
 }
 
 createBlueEnemyPlayer()
-
+/*
 for index in 1...10 {
     // loop block
     createBlueEnemyPlayer()
@@ -147,4 +147,51 @@ for index in 1...10 {
 for index in 1...100 {
     createBlueEnemyPlayer()
 }
+*/
+// Example of a function
 
+// 1. a function with no parameter and return
+func bakePizza() {
+    print("Pizza with salami and cheese")
+}
+
+bakePizza()
+
+// 2. a function with parameter and no return
+func bakePizza(ingredient1: String, ingredient2: String) {
+    print("pizza with \(ingredient1) and \(ingredient2)")
+}
+
+bakePizza(ingredient1: "tuna", ingredient2: "cheese")
+bakePizza(ingredient1: "Mushrooms", ingredient2: "cheese")
+
+// 3. a function with parameter and return
+func bakePizza(ingredient1: String, ingredient2: String, ingredient3: String) -> String {
+    return ("pizza with \(ingredient1) and \(ingredient2) and \(ingredient3)")
+    
+}
+var pizza = bakePizza(ingredient1: "tuna", ingredient2: "cheese", ingredient3: "mushrooms")
+print(pizza)
+
+var amount = 120
+var personCount = 2
+
+func calculateATip (amount: Double) {
+    let tip = amount * 10 / 100
+    print(tip)
+}
+
+calculateATip(amount: 120)
+
+func calculateATipWithReturn (amount: Double) -> Double {
+    let tip = amount * 20 / 100
+    return tip
+}
+
+let tip = calculateATipWithReturn(amount: 120)
+
+func showTipOnLabel (tip: Double) {
+    print("You have to pay \(tip)")
+}
+
+showTipOnLabel(tip: tip)
