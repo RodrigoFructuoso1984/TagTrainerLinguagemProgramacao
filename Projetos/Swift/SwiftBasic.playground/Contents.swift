@@ -139,4 +139,12 @@ func createBlueEnemyPlayer() {
 
 createBlueEnemyPlayer()
 
+for index in 1...10 {
+    // loop block
+    createBlueEnemyPlayer()
+}
+
+for index in 1...100 {
+    createBlueEnemyPlayer()
+}
 
