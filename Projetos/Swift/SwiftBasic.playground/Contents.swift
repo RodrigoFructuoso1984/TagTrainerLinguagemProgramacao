@@ -78,7 +78,7 @@ let backGroundColor = "Red"
  */
 
 // What is a function?
-// A function always has a task
+// A function always has a task / job
 
 func nameOfTheFunction(){
     //function block
@@ -89,3 +89,54 @@ func nameOfTheFunction(){
 }
 
 nameOfTheFunction()
+
+func postATextPost(){
+    print("Some Text")
+}
+
+postATextPost()
+
+func createEnemyPlayer() {
+    print("Create Enemy")
+}
+
+createEnemyPlayer()
+createEnemyPlayer()
+createEnemyPlayer()
+createEnemyPlayer()
+createEnemyPlayer()
+
+func checkLogin(email: String, password: String) { // String -> the data type for text
+    print("Check the login")
+    if (email == "john@gmail.com" && password == "1234") {
+        print("Login")
+    } else {
+        print("Email or password are wrong")
+    }
+}
+
+checkLogin(email: "john@gmail.com", password: "12345")
+
+// Why use a function?
+// DRY - Don't repeat yourself
+var enemy1 = "enemyPlayer1"
+var enemy1LifePoint = 3
+var enemy2 = "enemyPlayer1"
+var enemy2LifePoint = 3
+var enemy3 = "enemyPlayer1"
+var enemy3LifePoint = 3
+var enemy4 = "enemyPlayer1"
+var enemy4LifePoint = 3
+var enemy5 = "enemyPlayer1"
+var enemy5LifePoint = 3
+var enemy6 = "enemyPlayer1"
+var enemy6LifePoint = 3
+
+func createBlueEnemyPlayer() {
+    var lifePoint = 100
+    print("Create blue Enemy player with \(lifePoint)")
+}
+
+createBlueEnemyPlayer()
+
+
