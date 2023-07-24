@@ -32,7 +32,7 @@ let databaseAdress = "database123"
 
 // What is a data type? -> specifies the type of information in a variable / constant
 var number: Int = 100
-
+let numbers2: Int = 200
 // Save numbers like 20, 1000, 1, 2342... ->
 // Save decimal number like 20.3 -> Double or Float
 // Save text like "Hi I'm Chris" -> String
@@ -45,6 +45,16 @@ var number: Int = 100
 // Do I have to specify the data type in Swift? -> NO
 // Why? Because Swift automatically recognizes the data type from the assigment
 
-var gameHighScore = 1000
+var gameHighScore = 1000 // Because of the number it will be the data type assignment
 var username = "Testuser"
-let databaseAdress2 = "database12345"
+let databaseAdress2 = "database12345" // This is a String because of the " "
+
+/*
+ comments
+ */
+
+// -> line comment
+
+/*
+ more then onel live comment
+ */
