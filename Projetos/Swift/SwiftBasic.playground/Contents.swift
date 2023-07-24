@@ -67,3 +67,8 @@ let databaseAdress2 = "database12345" // This is a String because of the " "
 var user = 1
 var userTwo = 10
 var userThree = 20
+
+// use camelCase Notation
+var restartAlertBoxInSecondWindow = "return"
+var categoryTag = 0
+let backGroundColor = "Red"
