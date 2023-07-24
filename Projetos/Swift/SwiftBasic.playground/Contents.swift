@@ -58,3 +58,12 @@ let databaseAdress2 = "database12345" // This is a String because of the " "
 /*
  more then onel live comment
  */
+
+/*
+ tipps
+ */
+
+// variable names can only appear once -> You CAN'T USE A VARIABLE / CONSTANT NAME TWICE
+var user = 1
+var userTwo = 10
+var userThree = 20
