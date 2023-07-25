@@ -197,3 +197,52 @@ func showTipOnLabel (tip: Double) {
 }
 
 showTipOnLabel(tip: tip)
+
+/*
+    if ...{do this}else...{do this}/ switch
+ */
+
+/*
+ if (here we check a condition) {
+    if the condition is true, the code in this block will be executed
+ } else (the condition is not true (false)) {
+    the code in this block will be executed
+ }
+ */
+
+var highScore = 500
+
+if highScore == 1000 {
+    print("Go to level 2")
+} else {
+    print("Try again")
+}
+
+if highScore == 1000 {
+    
+} else if highScore == 2000 {
+    
+} else if highScore == 3000 {
+    
+} else if highScore == 5000 {
+    
+}
+
+// && -> call this and || -> call or
+
+// you can use diffferent operators ==, !=, <, >, <=, >=
+
+// == value1 equal value2
+// != value1 not equal value 2
+// < value1 is smaller than value 2
+// > value1 is bigger than value 2
+// <= value1 is smaller or equal than value 2
+// >= value1 is bigger or equal than value 2
+
+if highScore <= 1000 { // 0...1000
+    print("1000 or lower points")
+} else if highScore > 1000 && highScore <= 2000 { // 1000...2000
+    
+} else if highScore > 2000 && highScore <= 3000 { // 2000...3000
+    print("You get 3 from 3 Stars")
+}
