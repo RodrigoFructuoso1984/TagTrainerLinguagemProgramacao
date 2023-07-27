@@ -24,7 +24,16 @@ export default class App extends Component {
     this.setState({name: nome});
   };
 
+  componentWillMount(): void {
+    console.log("componentWillMount");
+  }
+
+  componentDidMount(): void {
+    console.log("componentDidMount");
+  }
+
   render() {
+    console.log("render")
     return (
       <Fragment>
           <StatusBar barStyle="dark-content"></StatusBar>
