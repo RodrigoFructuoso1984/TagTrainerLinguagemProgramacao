@@ -5,26 +5,41 @@
  * @format
  */
 
-import React, { Fragment } from 'react';
-import { SafeAreaView,StatusBar,Text,View } from 'react-native';
+import React, { Fragment, Component } from 'react';
+import { Alert, SafeAreaView, StatusBar, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 import Button from './src/components/Button';
 
-function App(): JSX.Element {
+export default class App extends Component {
+  state = {
+      contador: 0,
+      name: ""
+  };
 
-  return (
-    <Fragment>
-        <StatusBar barStyle="dark-content"></StatusBar>
-        <SafeAreaView>
-          <Button>
-            <Text>Button2</Text>
-          </Button>
-          <Button alerta="testou">
-            <Text>Button2</Text>
-          </Button>
-        </SafeAreaView>
-    </Fragment>
-  );
+  apertou = () => {
+    this.setState({contador: this.state.contador+1})
+  };
+
+  mudouNome = nome => {
+    this.setState({name: nome});
+  };
+
+  render() {
+    return (
+      <Fragment>
+          <StatusBar barStyle="dark-content"></StatusBar>
+          <SafeAreaView>
+            <Text>Hello {this.state.name}</Text>
+            <Text>Contador: {this.state.contador}</Text>
+            <TextInput 
+              value={this.state.name} 
+              onChangeText = {nome => this.mudouNome(nome)}
+            />
+            <TouchableOpacity onPress={this.apertou}>
+              <Text>Somar</Text>
+            </TouchableOpacity>  
+          </SafeAreaView>
+      </Fragment>
+    );
+  }
 }
-
-export default App;
