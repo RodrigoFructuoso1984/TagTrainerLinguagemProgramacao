@@ -16,8 +16,9 @@ function App(): JSX.Element {
     <Fragment>
         <StatusBar barStyle="dark-content"></StatusBar>
         <SafeAreaView>
-          <Button />
-          <Text>Teste</Text>
+          <Button title="button title">
+            <Text>Button2</Text>
+          </Button>
         </SafeAreaView>
     </Fragment>
   );
