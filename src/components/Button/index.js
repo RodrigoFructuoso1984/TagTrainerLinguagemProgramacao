@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Text,View } from 'react-native';
 
-const App = () => {
+/*
+const Button = () => {
 
   return (
     <View>
-        <Text>Teste</Text>
+        <Text>Button</Text>
     </View>
   );
 }
 
-export default App;
+export default Button;
+*/
+
+export default class Button extends Component {
+    render() {
+        return (
+            <View>
+                <Text>Button</Text>
+            </View>
+        )
+    }
+}
