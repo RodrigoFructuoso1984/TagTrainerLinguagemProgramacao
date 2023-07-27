@@ -13,7 +13,8 @@ import Button from './src/components/Button';
 export default class App extends Component {
   state = {
       contador: 0,
-      name: ""
+      name: "",
+      personagens: []
   };
 
   apertou = () => {
@@ -24,16 +25,19 @@ export default class App extends Component {
     this.setState({name: nome});
   };
 
-  componentWillMount(): void {
-    console.log("componentWillMount");
-  }
+  async componentWillMount() {
+    try {
+      const response = await fetch('https://swapi.co/api/people/?format=json');
+      const dataJson = await response.json();
 
-  componentDidMount(): void {
-    console.log("componentDidMount");
+      this.setState({ personagens: dataJson.results });
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   render() {
-    console.log("render")
+    //console.log("render")
     return (
       <Fragment>
           <StatusBar barStyle="dark-content"></StatusBar>
@@ -47,6 +51,11 @@ export default class App extends Component {
             <TouchableOpacity onPress={this.apertou}>
               <Text>Somar</Text>
             </TouchableOpacity>  
+
+            {this.state.personagens.map(personagem => {
+              return <Text key={personagem.name}>{personagem.name}aaaaa</Text>
+            })}
+
           </SafeAreaView>
       </Fragment>
     );
