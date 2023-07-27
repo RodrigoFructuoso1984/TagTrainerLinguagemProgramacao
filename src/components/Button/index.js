@@ -1,15 +1,12 @@
-import React, { Fragment } from 'react';
-import { SafeAreaView,StatusBar,Text,View } from 'react-native';
+import React from 'react';
+import { Text,View } from 'react-native';
 
-function App(): JSX.Element {
+const App = () => {
 
   return (
-    <Fragment>
-        <StatusBar barStyle="dark-content"></StatusBar>
-        <SafeAreaView>
-          <Text>Teste</Text>
-        </SafeAreaView>
-    </Fragment>
+    <View>
+        <Text>Teste</Text>
+    </View>
   );
 }
 
